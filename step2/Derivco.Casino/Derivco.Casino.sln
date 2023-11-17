@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino", "Derivco.Casino\Derivco.Casino.csproj", "{22F1EEDD-A6B9-4328-93EA-94D683AC58AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7FD627E1-A6CD-47F6-8294-050E5D15E784}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F4D87CF8-45C2-461E-8CF2-EE0FF65B90ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{828939B4-9A16-4711-A450-B658532D2F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino.Services", "Derivco.Casino.Services\Derivco.Casino.Services.csproj", "{303EEB7E-9FA9-49E8-ADC4-C5895ADFF17C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino.Services.Interfaces", "Derivco.Casino.Services.Interfaces\Derivco.Casino.Services.Interfaces.csproj", "{D5F78DB7-68B5-4CD2-94B7-899256CC71FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino.Services.Tests", "Derivco.Casino.Services.Tests\Derivco.Casino.Services.Tests.csproj", "{60F1F6A5-7364-489B-83AA-95A46CA7F79C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino.Shared", "Derivco.Casino.Shared\Derivco.Casino.Shared.csproj", "{0AE9FEEB-A253-444A-AEB1-DE84A6075E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino.Data", "Derivco.Casino.Data\Derivco.Casino.Data.csproj", "{37E3DFA4-8C66-4BD4-8C13-54ACC7D452EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{52D0082B-FCFC-4DAA-92EF-CC9AA1CB31BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino.Repositories", "Derivco.Casino.Repositories\Derivco.Casino.Repositories.csproj", "{2D1B4A90-2469-451F-8579-EB8183B63C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Derivco.Casino.Repositories.Interfaces", "Derivco.Casino.Repositories.Interfaces\Derivco.Casino.Repositories.Interfaces.csproj", "{B0FE8468-E0F5-4385-8DEB-66BDE4390EC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22F1EEDD-A6B9-4328-93EA-94D683AC58AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F1EEDD-A6B9-4328-93EA-94D683AC58AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F1EEDD-A6B9-4328-93EA-94D683AC58AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F1EEDD-A6B9-4328-93EA-94D683AC58AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303EEB7E-9FA9-49E8-ADC4-C5895ADFF17C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303EEB7E-9FA9-49E8-ADC4-C5895ADFF17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303EEB7E-9FA9-49E8-ADC4-C5895ADFF17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303EEB7E-9FA9-49E8-ADC4-C5895ADFF17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F78DB7-68B5-4CD2-94B7-899256CC71FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F78DB7-68B5-4CD2-94B7-899256CC71FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F78DB7-68B5-4CD2-94B7-899256CC71FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F78DB7-68B5-4CD2-94B7-899256CC71FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F1F6A5-7364-489B-83AA-95A46CA7F79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F1F6A5-7364-489B-83AA-95A46CA7F79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F1F6A5-7364-489B-83AA-95A46CA7F79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F1F6A5-7364-489B-83AA-95A46CA7F79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE9FEEB-A253-444A-AEB1-DE84A6075E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE9FEEB-A253-444A-AEB1-DE84A6075E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE9FEEB-A253-444A-AEB1-DE84A6075E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE9FEEB-A253-444A-AEB1-DE84A6075E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E3DFA4-8C66-4BD4-8C13-54ACC7D452EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E3DFA4-8C66-4BD4-8C13-54ACC7D452EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E3DFA4-8C66-4BD4-8C13-54ACC7D452EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E3DFA4-8C66-4BD4-8C13-54ACC7D452EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1B4A90-2469-451F-8579-EB8183B63C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1B4A90-2469-451F-8579-EB8183B63C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1B4A90-2469-451F-8579-EB8183B63C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1B4A90-2469-451F-8579-EB8183B63C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FE8468-E0F5-4385-8DEB-66BDE4390EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FE8468-E0F5-4385-8DEB-66BDE4390EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FE8468-E0F5-4385-8DEB-66BDE4390EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FE8468-E0F5-4385-8DEB-66BDE4390EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{303EEB7E-9FA9-49E8-ADC4-C5895ADFF17C} = {F4D87CF8-45C2-461E-8CF2-EE0FF65B90ED}
+		{D5F78DB7-68B5-4CD2-94B7-899256CC71FE} = {F4D87CF8-45C2-461E-8CF2-EE0FF65B90ED}
+		{60F1F6A5-7364-489B-83AA-95A46CA7F79C} = {F4D87CF8-45C2-461E-8CF2-EE0FF65B90ED}
+		{0AE9FEEB-A253-444A-AEB1-DE84A6075E9E} = {828939B4-9A16-4711-A450-B658532D2F96}
+		{37E3DFA4-8C66-4BD4-8C13-54ACC7D452EA} = {7FD627E1-A6CD-47F6-8294-050E5D15E784}
+		{2D1B4A90-2469-451F-8579-EB8183B63C47} = {52D0082B-FCFC-4DAA-92EF-CC9AA1CB31BA}
+		{B0FE8468-E0F5-4385-8DEB-66BDE4390EC0} = {52D0082B-FCFC-4DAA-92EF-CC9AA1CB31BA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C78C9616-E21C-491A-94C8-F4207C30DD76}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\bin\Debug\net8.0\Derivco.Casino.Data.deps.json
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\bin\Debug\net8.0\Derivco.Casino.Data.dll
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\bin\Debug\net8.0\Derivco.Casino.Data.pdb
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\bin\Debug\net8.0\Derivco.Casino.Shared.dll
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\bin\Debug\net8.0\Derivco.Casino.Shared.pdb
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.csproj.AssemblyReference.cache
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.AssemblyInfoInputs.cache
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.AssemblyInfo.cs
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.csproj.CoreCompileInputs.cache
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.sourcelink.json
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.csproj.CopyComplete
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.dll
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\refint\Derivco.Casino.Data.dll
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\Derivco.Casino.Data.pdb
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Data\obj\Debug\net8.0\ref\Derivco.Casino.Data.dll

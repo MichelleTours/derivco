@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Derivco.Casino.Data/1.0.0": {
+        "dependencies": {
+          "Derivco.Casino.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Derivco.Casino.Data.dll": {}
+        }
+      },
+      "Derivco.Casino.Shared/1.0.0": {
+        "runtime": {
+          "Derivco.Casino.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Derivco.Casino.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Derivco.Casino.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
