@@ -1,3 +1,7 @@
+USE NorthWind
+GO
+
+
 IF EXISTS (SELECT * from dbo.sysobjects WHERE Id = object_id(N'dbo.pr_GetOrderSummary') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
 	DROP PROCEDURE dbo.pr_GetOrderSummary
 GO
