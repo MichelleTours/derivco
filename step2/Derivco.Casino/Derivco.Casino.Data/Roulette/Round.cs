@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Derivco.Casino.Data.Roulette
 {
-    public class Round
+    public class NewRound
     {
         public long Id { get; set; }
         public Guid CorrelationId { get; set; }

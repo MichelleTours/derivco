@@ -4,14 +4,433 @@
     "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\Derivco.Casino.csproj": {}
   },
   "projects": {
-    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\Derivco.Casino.csproj": {
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\Derivco.Casino.csproj",
-        "projectName": "Derivco.Casino",
-        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\Derivco.Casino.csproj",
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj",
+        "projectName": "Derivco.Casino.Data",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj",
         "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
-        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\obj\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj",
+        "projectName": "Derivco.Casino.DomainModels",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj",
+        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj",
+        "projectName": "Derivco.Casino.Repositories.Interfaces",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories\\Derivco.Casino.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories\\Derivco.Casino.Repositories.csproj",
+        "projectName": "Derivco.Casino.Repositories",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories\\Derivco.Casino.Repositories.csproj",
+        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj",
+        "projectName": "Derivco.Casino.Services.Interfaces",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.DomainModels\\Derivco.Casino.DomainModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj",
+        "projectName": "Derivco.Casino.Services",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj",
+        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj",
+        "projectName": "Derivco.Casino.Shared",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj",
+        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,10 +458,122 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\Derivco.Casino.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\Derivco.Casino.csproj",
+        "projectName": "Derivco.Casino",
+        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\Derivco.Casino.csproj",
+        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories\\Derivco.Casino.Repositories.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories\\Derivco.Casino.Repositories.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj"
+              },
+              "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {
+                "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.118, )"
             }
           },
           "imports": [

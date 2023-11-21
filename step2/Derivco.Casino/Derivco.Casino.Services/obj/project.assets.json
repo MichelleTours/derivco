@@ -86,11 +86,25 @@
           "bin/placeholder/Derivco.Casino.Data.dll": {}
         }
       },
+      "Derivco.Casino.DomainModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Derivco.Casino.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Derivco.Casino.DomainModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Derivco.Casino.DomainModels.dll": {}
+        }
+      },
       "Derivco.Casino.Repositories.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Derivco.Casino.Data": "1.0.0"
+          "Derivco.Casino.Data": "1.0.0",
+          "Derivco.Casino.DomainModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Derivco.Casino.Repositories.Interfaces.dll": {}
@@ -103,7 +117,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Derivco.Casino.Data": "1.0.0"
+          "Derivco.Casino.Data": "1.0.0",
+          "Derivco.Casino.DomainModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Derivco.Casino.Services.Interfaces.dll": {}
@@ -311,6 +326,11 @@
       "type": "project",
       "path": "../Derivco.Casino.Data/Derivco.Casino.Data.csproj",
       "msbuildProject": "../Derivco.Casino.Data/Derivco.Casino.Data.csproj"
+    },
+    "Derivco.Casino.DomainModels/1.0.0": {
+      "type": "project",
+      "path": "../Derivco.Casino.DomainModels/Derivco.Casino.DomainModels.csproj",
+      "msbuildProject": "../Derivco.Casino.DomainModels/Derivco.Casino.DomainModels.csproj"
     },
     "Derivco.Casino.Repositories.Interfaces/1.0.0": {
       "type": "project",

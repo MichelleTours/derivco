@@ -2,8 +2,10 @@ C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debu
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.Services.Interfaces.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.Services.Interfaces.pdb
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.Data.dll
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.DomainModels.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.Shared.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.Data.pdb
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.DomainModels.pdb
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\bin\Debug\net8.0\Derivco.Casino.Shared.pdb
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\obj\Debug\net8.0\Derivco.Casino.Services.Interfaces.csproj.AssemblyReference.cache
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Interfaces\obj\Debug\net8.0\Derivco.Casino.Services.Interfaces.GeneratedMSBuildEditorConfig.editorconfig

@@ -10,12 +10,16 @@ namespace Derivco.Casino.Data.Roulette
     public class PlaceBetOption
     {
 
-        public Guid RoomCorrelationId { get; set; }
+        public Guid RoundCorrelationId { get; set; }
 
-        public Guid BetCorrelationId { get; set; }
+        public Guid CorrelationId { get; set; }
 
-        public RouletteBetOption RouletteBetOption { get; set; }
+        public RouletteBetOption Option { get; set; }
 
         public decimal Value { get; set; }
+
+        public bool HasPayout { get; set; }
+
+        public decimal PayoutValue{ get; set; }
     }
 }

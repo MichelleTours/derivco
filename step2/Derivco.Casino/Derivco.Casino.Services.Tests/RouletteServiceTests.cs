@@ -38,37 +38,37 @@ namespace Derivco.Casino.Services.Tests
 
             betsToPlaceSingle = new List<PlaceBetOption>
             {
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.eight, Value = 1000}
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.eight, Value = 1000}
             };
 
             betsToPlaceMultiple = new List<PlaceBetOption>
             {
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.eight, Value = 1000},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.red, Value = 200},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.firstTwelve, Value = 800},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.eight, Value = 1000},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.red, Value = 200},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.firstTwelve, Value = 800},
 
             };
 
             betsToPlace_TooManyBets = new List<PlaceBetOption>
             {
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.eight, Value = 1000},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.red, Value = 200},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.firstTwelve, Value = 800},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.fiveteen, Value = 100},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.secondTwelve, Value = 300},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.thirtySix, Value = 150},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.three, Value = 20},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.eight, Value = 1000},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.red, Value = 200},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.firstTwelve, Value = 800},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.fiveteen, Value = 100},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.secondTwelve, Value = 300},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.thirtySix, Value = 150},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.three, Value = 20},
             };
 
             betsToPlace_ValueTooHigh = new List<PlaceBetOption>
             {
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.eight, Value = 1000},
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.black, Value = 7000}
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.eight, Value = 1000},
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.black, Value = 7000}
             };
 
             betsToPlace_ValueTooLow = new List<PlaceBetOption>
             {
-                new PlaceBetOption{ RouletteBetOption = Shared.Enums.RouletteBetOption.eight, Value = 20}
+                new PlaceBetOption{ Option = Shared.Enums.RouletteBetOption.eight, Value = 20}
                 
             };
 
@@ -86,7 +86,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_PlaceBet()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
 
           
             var placeBetResult = serviceUnderTest.PlaceBet(this.roundCorrelationId, betsToPlaceSingle).Result;
@@ -96,11 +96,11 @@ namespace Derivco.Casino.Services.Tests
 
             foreach (var placedBet in placeBetResult.PlacedBets)
             {
-                Assert.IsNotNull(placedBet.BetCorrelationId);
+                Assert.IsNotNull(placedBet.CorrelationId);
             }
 
             this.appDBrepositoryMock.Verify(c => c.GetRoundByCorrelationId(It.IsAny<Guid>()), Times.Exactly(1));
-            this.appDBrepositoryMock.Verify(c => c.PlaceBets(betsToPlaceSingle), Times.Exactly(1));
+            this.appDBrepositoryMock.Verify(c => c.PlaceBets(this.roundCorrelationId, betsToPlaceSingle), Times.Exactly(1));
 
             Debug.WriteLine(placeBetResult.Message);
         }
@@ -108,7 +108,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_PlaceMultipleBets()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
             
             var placeBetResult = serviceUnderTest.PlaceBet(this.roundCorrelationId, betsToPlaceMultiple).Result;
 
@@ -117,11 +117,11 @@ namespace Derivco.Casino.Services.Tests
 
             foreach (var placedBet in placeBetResult.PlacedBets)
             {
-                Assert.IsNotNull(placedBet.BetCorrelationId);
+                Assert.IsNotNull(placedBet.CorrelationId);
             }
 
             this.appDBrepositoryMock.Verify(c => c.GetRoundByCorrelationId(It.IsAny<Guid>()), Times.Exactly(1));
-            this.appDBrepositoryMock.Verify(c => c.PlaceBets(betsToPlaceMultiple), Times.Exactly(1));
+            this.appDBrepositoryMock.Verify(c => c.PlaceBets(this.roundCorrelationId, betsToPlaceMultiple), Times.Exactly(1));
 
 
             Debug.WriteLine(placeBetResult.Message);
@@ -131,7 +131,7 @@ namespace Derivco.Casino.Services.Tests
         public void Test_PlaceBet_InvalidRoundId()
         {           
 
-            Round nullRound = null;
+            NewRound nullRound = null;
 
             appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(It.IsAny<Guid>())).ReturnsAsync(nullRound);
                        
@@ -147,7 +147,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_PlaceBet_BetValueTooSmall()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
 
             var placeBetResult = serviceUnderTest.PlaceBet(this.roundCorrelationId, betsToPlace_ValueTooLow).Result;
 
@@ -161,7 +161,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_PlaceBet_BetValueTooHigh()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
 
             var placeBetResult = serviceUnderTest.PlaceBet(this.roundCorrelationId, betsToPlace_ValueTooHigh).Result;
 
@@ -175,7 +175,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_PlaceBet_MaximumNumberOfBetsExceeded()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
 
             var placeBetResult = serviceUnderTest.PlaceBet(this.roundCorrelationId, betsToPlace_TooManyBets).Result;
 
@@ -190,7 +190,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_Spin()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
 
             var spinResult = serviceUnderTest.Spin(this.roundCorrelationId).Result;
 
@@ -203,7 +203,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_Spin_Loaded_Red()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
 
             var spinResult = serviceUnderTest.Spin(this.roundCorrelationId, SpinStrategyEnum.Loaded_Red).Result;
 
@@ -217,7 +217,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_Spin_Loaded_Third_Twelve()
         {
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId });
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId)).ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId });
 
             var spinResult = serviceUnderTest.Spin(this.roundCorrelationId, SpinStrategyEnum.Loaded_Third_Twelve).Result;
 
@@ -230,7 +230,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_Spin_InvalidRoundId()
         {
-            Round nullRound = null;
+            NewRound nullRound = null;
 
             appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(It.IsAny<Guid>())).ReturnsAsync(nullRound);
 
@@ -245,17 +245,17 @@ namespace Derivco.Casino.Services.Tests
         public void Test_Payout()
         {
             appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId))
-                .ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId, SpinValue = RouletteWheelBucket.eight});
+                .ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId, SpinValue = RouletteWheelBucket.eight});
 
             appDBrepositoryMock.Setup(c => c.GetBetsForRound(this.roundCorrelationId)).ReturnsAsync(betsToPlaceSingle);
 
             var betMultiplier = 36;
 
-            appDBrepositoryMock.Setup(c => c.GetPayoutMapforBetOptions(betsToPlaceSingle.First().RouletteBetOption, RouletteWheelBucket.eight))
+            appDBrepositoryMock.Setup(c => c.GetPayoutMapforBetOptions(betsToPlaceSingle.First().Option, RouletteWheelBucket.eight))
                 .ReturnsAsync(new BetOptionsPaypoutMap 
                 { 
                     RouletteWheelBucket = RouletteWheelBucket.eight,  
-                    RouletteBetOption = betsToPlaceSingle.First().RouletteBetOption,
+                    RouletteBetOption = betsToPlaceSingle.First().Option,
                     PayoutMultiplier = betMultiplier
                 });
 
@@ -274,7 +274,7 @@ namespace Derivco.Casino.Services.Tests
         [Test]
         public void Test_Payout_InvalidRoundId()
         {
-            Round nullRound = null;
+            NewRound nullRound = null;
 
             appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(It.IsAny<Guid>())).ReturnsAsync(nullRound);
 
@@ -290,7 +290,7 @@ namespace Derivco.Casino.Services.Tests
         {
            
 
-            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(It.IsAny<Guid>())).ReturnsAsync(new Round());
+            appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(It.IsAny<Guid>())).ReturnsAsync(new NewRound());
 
             var payoutResult = serviceUnderTest.Payout(this.roundCorrelationId).Result;
 
@@ -305,7 +305,7 @@ namespace Derivco.Casino.Services.Tests
             List <PlaceBetOption> emptyBets = new List<PlaceBetOption>();
 
             appDBrepositoryMock.Setup(c => c.GetRoundByCorrelationId(this.roundCorrelationId))
-               .ReturnsAsync(new Round { CorrelationId = this.roundCorrelationId, SpinValue = RouletteWheelBucket.eight });
+               .ReturnsAsync(new NewRound { CorrelationId = this.roundCorrelationId, SpinValue = RouletteWheelBucket.eight });
 
             appDBrepositoryMock.Setup(c => c.GetBetsForRound(this.roundCorrelationId)).ReturnsAsync(emptyBets);
 

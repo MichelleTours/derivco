@@ -1,4 +1,5 @@
 ﻿using Derivco.Casino.Data.Roulette;
+using Derivco.Casino.DomainModels.Roulette.DTO;
 using Derivco.Casino.Repositories.Interfaces;
 using Derivco.Casino.Services.Interfaces;
 using Derivco.Casino.Shared.Constants;
@@ -37,7 +38,7 @@ namespace Derivco.Casino.Services
 
         public async Task<PlaceBetResult> PlaceBet(Guid roundCorrelationId, List<PlaceBetOption> betsToPlace)
         {
-            var placeBetResult = new PlaceBetResult { isSuccess = true };
+            var placeBetResult = new PlaceBetResult ();
 
             var rouletteRound = await this.appDBRepository.GetRoundByCorrelationId(roundCorrelationId);
 
@@ -56,16 +57,26 @@ namespace Derivco.Casino.Services
                 return placeBetResult;
             }
 
+            List<PlaceBetOption> betOptionsToPlace = new List<PlaceBetOption>();
+
             foreach (var bet in betsToPlace)
             {
-                bet.RoomCorrelationId = roundCorrelationId;
-                bet.BetCorrelationId = Guid.NewGuid();
+                betOptionsToPlace.Add( new PlaceBetOption
+                {
+                    RoundCorrelationId = roundCorrelationId,
+                    CorrelationId = Guid.NewGuid(),
+                    Value = bet.Value,
+                    Option = bet.Option,
+                    HasPayout = false,
+                    PayoutValue = 0
+                });
             }
 
             //Persist the Bets
-            await this.appDBRepository.PlaceBets(betsToPlace);
-            placeBetResult.PlacedBets.AddRange(betsToPlace);
+            await this.appDBRepository.PlaceBets(roundCorrelationId, betOptionsToPlace);
+            placeBetResult.PlacedBets.AddRange(betOptionsToPlace);
 
+            placeBetResult.isSuccess = true;
             placeBetResult.Message = $"Roulette Round Place Bet Success: '{roundCorrelationId}', {betsToPlace.Count} bets to the value of {betsToPlace.Sum(c => c.Value)} placed";
             return placeBetResult;
 
@@ -151,32 +162,42 @@ namespace Derivco.Casino.Services
 
             foreach(var placedBet in placedBets)
             {
-                var payoutyMap = await this.appDBRepository.GetPayoutMapforBetOptions(placedBet.RouletteBetOption, rouletteRound.SpinValue.Value);
+                var payoutyMap = await this.appDBRepository.GetPayoutMapforBetOptions(placedBet.Option, rouletteRound.SpinValue.Value);
 
-                if (payoutyMap != null)
-                {
-                    payoutResult.Payouts.Add(new PlaceBetPayout
-                    {
-                        RoomCorrelationId = rouletteRound.CorrelationId,
-                        BetCorrelationId = placedBet.RoomCorrelationId,
-                        PayoutCorrelationId = Guid.NewGuid(),                     
-                        PayoutValue = placedBet.Value * payoutyMap.PayoutMultiplier // kept it simple, could add strategy for American Vs Europe for example
-                    });
+                if (payoutyMap != null)                {
+
+                    placedBet.HasPayout = true;
+                    placedBet.PayoutValue = placedBet.Value * payoutyMap.PayoutMultiplier;
                 }
             }
 
-            await this.appDBRepository.SavePayouts(payoutResult.Payouts);
+            await this.appDBRepository.SaveBets(roundCorrelationId, placedBets);
+
 
 
             if(payoutResult.Payouts.Count == 0 ) payoutResult.Message = $"No Payout for Round '{roundCorrelationId}',  Better Luck Next Time";
             else payoutResult.Message = $"{payoutResult.Payouts.Count} Payouts for Round '{roundCorrelationId}', to the sum of {payoutResult.Payouts.Sum(c => c.PayoutValue)}, Congratulations";
 
+            payoutResult.Payouts = placedBets.Where(x => x.HasPayout == true).ToList();
             payoutResult.isSuccess = true;
             return payoutResult;
 
 
         }
 
+        public async Task<IEnumerable<RoundDto>> GetPreviousRounds()
+        {
+            return await this.appDBRepository.GetPreviousRounds();
+        }
+
+        public async Task<RoundDto> GetPreviousRound(Guid roundCorellationId)
+        {
+            return await this.appDBRepository.GetPreviousRound(roundCorellationId);
+        }
+
+       
+
+       
     }
 }
 

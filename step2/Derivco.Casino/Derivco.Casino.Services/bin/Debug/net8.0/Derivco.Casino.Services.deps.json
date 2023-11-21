@@ -65,9 +65,18 @@
           "Derivco.Casino.Data.dll": {}
         }
       },
+      "Derivco.Casino.DomainModels/1.0.0": {
+        "dependencies": {
+          "Derivco.Casino.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Derivco.Casino.DomainModels.dll": {}
+        }
+      },
       "Derivco.Casino.Repositories.Interfaces/1.0.0": {
         "dependencies": {
-          "Derivco.Casino.Data": "1.0.0"
+          "Derivco.Casino.Data": "1.0.0",
+          "Derivco.Casino.DomainModels": "1.0.0"
         },
         "runtime": {
           "Derivco.Casino.Repositories.Interfaces.dll": {}
@@ -75,7 +84,8 @@
       },
       "Derivco.Casino.Services.Interfaces/1.0.0": {
         "dependencies": {
-          "Derivco.Casino.Data": "1.0.0"
+          "Derivco.Casino.Data": "1.0.0",
+          "Derivco.Casino.DomainModels": "1.0.0"
         },
         "runtime": {
           "Derivco.Casino.Services.Interfaces.dll": {}
@@ -123,6 +133,11 @@
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
     "Derivco.Casino.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Derivco.Casino.DomainModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

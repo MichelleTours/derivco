@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "Derivco.Casino.Services.Interfaces/1.0.0": {
         "dependencies": {
-          "Derivco.Casino.Data": "1.0.0"
+          "Derivco.Casino.Data": "1.0.0",
+          "Derivco.Casino.DomainModels": "1.0.0"
         },
         "runtime": {
           "Derivco.Casino.Services.Interfaces.dll": {}
@@ -20,6 +21,14 @@
         },
         "runtime": {
           "Derivco.Casino.Data.dll": {}
+        }
+      },
+      "Derivco.Casino.DomainModels/1.0.0": {
+        "dependencies": {
+          "Derivco.Casino.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Derivco.Casino.DomainModels.dll": {}
         }
       },
       "Derivco.Casino.Shared/1.0.0": {
@@ -36,6 +45,11 @@
       "sha512": ""
     },
     "Derivco.Casino.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Derivco.Casino.DomainModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

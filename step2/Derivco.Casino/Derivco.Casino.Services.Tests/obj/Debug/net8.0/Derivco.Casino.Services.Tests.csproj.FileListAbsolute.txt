@@ -1,4 +1,10 @@
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Derivco.Casino.Services.Tests
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.csproj.AssemblyReference.cache
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.AssemblyInfoInputs.cache
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.AssemblyInfo.cs
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.csproj.CoreCompileInputs.cache
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.sourcelink.json
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\testhost.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\testhost.exe
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\NUnit3.TestAdapter.dll
@@ -97,6 +103,7 @@ C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Data.dll
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.DomainModels.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Repositories.Interfaces.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Services.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Services.Interfaces.dll
@@ -105,13 +112,8 @@ C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Repositories.Interfaces.pdb
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Services.Interfaces.pdb
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Services.pdb
+C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.DomainModels.pdb
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\bin\Debug\net8.0\Derivco.Casino.Shared.pdb
-C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.csproj.AssemblyReference.cache
-C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.AssemblyInfoInputs.cache
-C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.AssemblyInfo.cs
-C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.csproj.CoreCompileInputs.cache
-C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.sourcelink.json
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.csproj.CopyComplete
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\Derivco.Casino.Services.Tests.dll
 C:\work\derivco\step2\Derivco.Casino\Derivco.Casino.Services.Tests\obj\Debug\net8.0\refint\Derivco.Casino.Services.Tests.dll

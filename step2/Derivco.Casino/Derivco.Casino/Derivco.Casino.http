@@ -1,6 +1,6 @@
 @Derivco.Casino_HostAddress = http://localhost:5186
 
-GET {{Derivco.Casino_HostAddress}}/weatherforecast/
+GET {{Derivco.Casino_HostAddress}}/roulette/
 Accept: application/json
 
 ###
