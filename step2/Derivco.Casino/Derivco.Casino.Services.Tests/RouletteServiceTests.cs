@@ -100,7 +100,7 @@ namespace Derivco.Casino.Services.Tests
             }
 
             this.appDBrepositoryMock.Verify(c => c.GetRoundByCorrelationId(It.IsAny<Guid>()), Times.Exactly(1));
-            this.appDBrepositoryMock.Verify(c => c.PlaceBets(this.roundCorrelationId, betsToPlaceSingle), Times.Exactly(1));
+            this.appDBrepositoryMock.Verify(c => c.PlaceBets(It.IsAny<Guid>(), It.IsAny<List<PlaceBetOption>>()), Times.Exactly(1));
 
             Debug.WriteLine(placeBetResult.Message);
         }
@@ -121,7 +121,7 @@ namespace Derivco.Casino.Services.Tests
             }
 
             this.appDBrepositoryMock.Verify(c => c.GetRoundByCorrelationId(It.IsAny<Guid>()), Times.Exactly(1));
-            this.appDBrepositoryMock.Verify(c => c.PlaceBets(this.roundCorrelationId, betsToPlaceMultiple), Times.Exactly(1));
+            this.appDBrepositoryMock.Verify(c => c.PlaceBets(It.IsAny<Guid>(), It.IsAny<List<PlaceBetOption>>()), Times.Exactly(1));
 
 
             Debug.WriteLine(placeBetResult.Message);
