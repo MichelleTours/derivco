@@ -37,8 +37,8 @@ STEP 2:
 	1. I have implemented async/await throughout the application and it should not be thread blocking.
 	2. All requests return JSON body, and can be tested by running the application and executing the steps via the swagger interface
 	3. I have implemented SOLID principles throughout, Including Single Responsibility Principle, Integration Segregation Principle and Dependency Inversion Principle. Although not directly intentended I believe I have also implemented Open-Closed Principle. There was no opportuinity to implement Liskov substitution Principle.
-	4. I applied full TDD when implementing unit tests. I first decided on the idea, then wrote the failiing tests. Only after I have all tests written did I implement each on until it passed. 
-	5. I implemented Global Exception Handlikng, See "ErrorHandlerMiddleware"
+	4. I applied full TDD with mocking when implementing unit tests. I first decided on the idea, then wrote the failing tests. Only after I have all tests written did I implement each on until it passed. 
+	5. I implemented Global Exception Handlikng, See "ErrorHandlerMiddleware", which also implementes logging
 	6. The project is about 90% complete. All actions work except for the final payout. Unfortiunately work has caught up with my and I haven't been able to map the spin values to table locations which would determin the payout multiplier. 
 
 
