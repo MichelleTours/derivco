@@ -47,7 +47,7 @@ To run the Roulette Game:
 	1. Execute the "Begin Round" Method, this will start a new round (IsInplay = true) and return a RoundCorrelationId (GUID) which is used to correlate all further turns in the game
 	2. Execute "Place Bets" Method, using the same RoundCorrelationId. You can pass in up to 4 bets up to a total of 5000
 	3. Execute the "Spin"  Method - using the same RoundCorrelationId, this saves and returns the spin value
-	4. Execute the Payout Mewthod - using the same RoundCorrelationId, this calculates all winnig bets as per the spin value and ends the round(IsInPlay = false)
+	4. Execute the "Payout" Method - using the same RoundCorrelationId, this calculates all winnig bets as per the spin value and ends the round(IsInPlay = false)
 
 You can return a single round by calling "GetPreviousRound" and passing in a roundCorrelationId
 You can return all rounds by caling "GetPreviousRounds"
