@@ -27,15 +27,18 @@ STEP 2:
 
 	Implemented Web Api wirth latest version of Visual Studio Community Edition.
 	The project  uses .Net version 8.0 which came standard with VS2022
+	I went with Entity Framework since I am most familiar with it - especially since it was my first time using SQL Lite.
+	I have used the Repository patter to decouple the entities from the rest of the solution to make it unit testable.
+	I have also implemented a combination of factory + stratregy patters.
 
 	As per the requirements:
 	
-	1. I have implemented async/await throughoutthe applicatin and it should be be thread blocking.
-	2. All requests return JSON body
+	1. I have implemented async/await throughout the application and it should not be thread blocking.
+	2. All requests return JSON body, and can be tested by running the application and executing the steps via the swagger interface
 	3. I have implemented SOLID principles throughout, Including Single Responsibility Principle, Integration Segregation Principle and Dependency Inversion Principle. Although not directly intentended I believe I have also implemented Open-Closed Principle. There was no opportuinity to implement Liskov substitution Principle.
 	4. I applied full TDD when implementing unit tests. I first decided on the idea, then wrote the failiing tests. Only after I have all tests written did I implement each on until it passed. 
 	5. I implemented Global Exception Handlikng, See "ErrorHandlerMiddleware"
-	6. The project is about 90% complete. All actions work except for the final payout. Unfortiunately work hascaught up with my and I haven't been able to map the spin values to table locations which would determin the payout multiplier. 
+	6. The project is about 90% complete. All actions work except for the final payout. Unfortiunately work has caught up with my and I haven't been able to map the spin values to table locations which would determin the payout multiplier. 
 
 
 
