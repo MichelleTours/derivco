@@ -25,17 +25,17 @@ STEP 1:
 
 STEP 2:
 
-	Implemented Web Api wirth latest version of Visual Studio Community Edition.
+	Implemented Web Api with latest version of Visual Studio 2022 Community Edition.
 	The project  uses .Net version 8.0 which came standard with VS2022
 	I went with Entity Framework since I am most familiar with it - especially since it was my first time using SQL Lite.
-	I have used the Repository patter to decouple the entities from the rest of the solution to make it unit testable.
-	I implemented AutoMapper to map betwee Domain Entities and regular POCO's
-	I have also implemented a combination of factory + stratregy patters (as an example to perform differen "spin" stratregies)
+	I have used the Repository pattern to decouple the entities from the rest of the solution to make it unit testable.
+	I implemented AutoMapper to map between Domain Entities and regular POCO's
+	I have also implemented a combination of factory + strategy patterns (as an example to perform differen "spin" stratregies)
 
 	As per the requirements:
 	
 	1. I have implemented async/await throughout the application and it should not be thread blocking.
-	2. All requests return JSON body, and can be tested by running the application and executing the steps via the swagger interface
+	2. All requests accept/return JSON body, and can be tested by running the application and executing the steps via the swagger interface
 	3. I have implemented SOLID principles throughout, Including Single Responsibility Principle, Integration Segregation Principle and Dependency Inversion Principle. Although not directly intentended I believe I have also implemented Open-Closed Principle. There was no opportuinity to implement Liskov substitution Principle.
 	4. I applied full TDD with mocking when implementing unit tests. I first decided on the idea, then wrote the failing tests. Only after I have all tests written did I implement each on until it passed. 
 	5. I implemented Global Exception Handlikng, See "ErrorHandlerMiddleware", which also implementes logging
@@ -55,9 +55,9 @@ You can return all rounds by caling "GetPreviousRounds"
 
 
 
-All in all it was a fun exercise. I've drawn on my experience in TDD and SOLID and provided a solution that is completely decpoupled, TDD and produces a simple API to run rounds of roulette. The SQL part of the exercise was also enjoyable I have no problem with that exercise.
+All in all it was a fun exercise. I've drawn on my experience in TDD and SOLID and provided a solution that is completely decoupled, using TDD and produces a simple API to run rounds of roulette. The SQL part of the exercise was also enjoyable I have no problem with that exercise.
 
-Thank you for the opportunuty.
+Thank you for the opportunuty, I've added some screenshots showing some points of interest during the development of the solution 
 
 Michelle
 
