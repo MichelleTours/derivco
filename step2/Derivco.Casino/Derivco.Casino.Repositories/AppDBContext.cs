@@ -11,18 +11,19 @@ namespace Derivco.Casino.Repositories
 {
     public class AppDBContext : DbContext
     {
-        protected readonly IConfiguration Configuration;
-
-        public AppDBContext(IConfiguration configuration)
+      
+        public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
         {
-            Configuration = configuration;
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            // connect to sqlite database
-            options.UseSqlite(Configuration.GetConnectionString("SQLLiteConnection"));
-            //SQLitePCL.Batteries.Init();
+            foreach (var property in builder.Model.GetEntityTypes()
+                         .SelectMany(t => t.GetProperties())
+                         .Where(p => p.ClrType == typeof(decimal) || p.ClrType == typeof(decimal?)))
+            {
+                property.SetColumnType("decimal(18,2)");
+            }
         }
 
         public DbSet<Round> Rounds { get; set; }

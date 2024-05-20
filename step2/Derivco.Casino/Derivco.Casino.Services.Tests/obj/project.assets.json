@@ -1489,19 +1489,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MichelleTours\\.nuget\\packages\\": {}
+    "C:\\Users\\MichelleT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Tests\\Derivco.Casino.Services.Tests.csproj",
+      "projectUniqueName": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services.Tests\\Derivco.Casino.Services.Tests.csproj",
       "projectName": "Derivco.Casino.Services.Tests",
-      "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Tests\\Derivco.Casino.Services.Tests.csproj",
-      "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
-      "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Tests\\obj\\",
+      "projectPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services.Tests\\Derivco.Casino.Services.Tests.csproj",
+      "packagesPath": "C:\\Users\\MichelleT\\.nuget\\packages\\",
+      "outputPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MichelleT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1515,17 +1515,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
-              "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj"
+            "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj": {
+              "projectPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Data\\Derivco.Casino.Data.csproj"
             },
-            "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj": {
-              "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj"
+            "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj": {
+              "projectPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Repositories.Interfaces\\Derivco.Casino.Repositories.Interfaces.csproj"
             },
-            "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj": {
-              "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj"
+            "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj": {
+              "projectPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services.Interfaces\\Derivco.Casino.Services.Interfaces.csproj"
             },
-            "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj": {
-              "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj"
+            "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj": {
+              "projectPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj"
             }
           }
         }
@@ -1534,6 +1534,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1581,7 +1586,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

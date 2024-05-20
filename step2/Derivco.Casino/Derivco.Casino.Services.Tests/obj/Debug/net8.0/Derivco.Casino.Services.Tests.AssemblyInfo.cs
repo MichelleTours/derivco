@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Derivco.Casino.Services.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c90f69ebe442b6e7f5a82bdf0f4999c3607f1b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dff1d0b299127dee2f4516f7e562ada6a764f6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Derivco.Casino.Services.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Derivco.Casino.Services.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

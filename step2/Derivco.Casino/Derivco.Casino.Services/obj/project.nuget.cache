@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CedlDhSwZt/r/8/mMVWjI2dFi93sbD84Yr3qZejWCA5dNooiHSvOTU9N+XQdIUzH8PGO2air41bRfV4/AgVKCQ==",
+  "dgSpecHash": "sgXhxwzPmlC4gADYXJHtIL0U8MF7ppTjW/2Mvx6QkAdTcqxJi3WjY6byplk3fuD2/FUY61yAluZl+JU4jURh3Q==",
   "success": true,
-  "projectFilePath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj",
+  "projectFilePath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Services\\Derivco.Casino.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MichelleTours\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\MichelleTours\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\MichelleTours\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
-    "C:\\Users\\MichelleTours\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    "C:\\Users\\MichelleT\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MichelleT\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\MichelleT\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\MichelleT\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

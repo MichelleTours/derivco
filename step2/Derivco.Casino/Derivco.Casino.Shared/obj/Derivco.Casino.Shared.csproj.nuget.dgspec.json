@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {}
+    "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {}
   },
   "projects": {
-    "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {
+    "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj",
+        "projectUniqueName": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj",
         "projectName": "Derivco.Casino.Shared",
-        "projectPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj",
-        "packagesPath": "C:\\Users\\MichelleTours\\.nuget\\packages\\",
-        "outputPath": "C:\\work\\derivco\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\obj\\",
+        "projectPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\Derivco.Casino.Shared.csproj",
+        "packagesPath": "C:\\Users\\MichelleT\\.nuget\\packages\\",
+        "outputPath": "C:\\work\\MichelleCodeTest\\step2\\Derivco.Casino\\Derivco.Casino.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MichelleTours\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MichelleT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

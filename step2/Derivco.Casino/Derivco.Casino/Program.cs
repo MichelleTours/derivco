@@ -3,6 +3,8 @@ using Derivco.Casino.Repositories;
 using Derivco.Casino.Services.Interfaces;
 using Derivco.Casino.Services;
 using Derivco.Casino;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -33,6 +35,9 @@ builder.Services.AddTransient<IConfiguration>(sp =>
     configurationBuilder.AddJsonFile("appsettings.json");
     return configurationBuilder.Build();
 });
+
+builder.Services.AddDbContext<AppDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CasinoConnectionString")));
 
 var app = builder.Build();
 
